@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f5f7;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+.inventory-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.inventory-box {
+    position: relative;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+}
+
+.inventory-box:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #6034db; 
+}
+
+.inventory-box:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #59f73a; 
+}
+
+.inventory-box:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #cc2e7d;}
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-count {
+    font-size: 24px;
+    color: #333;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.add-product {
+    background-color: #28a745;
+}
+
+.update-inventory {
+    background-color: #17a2b8;
+}
+
+.inventory-status {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.chart-placeholder {
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.product-table {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex; /* Use flexbox to center the content */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Form */
+.popup-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    max-width: 90%;
+    position: relative;
+}
+
+/* Popup Close Button */
+.popup-form .btn.close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    /* border-radius: 50%; */
+    /* padding: 5px 10px; */
+    cursor: pointer;
+}
+
+.popup-form .btn.close:hover {
+    background: #d32f2f;
+}
+
+.popup-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.popup-form input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.popup-form button {
+    background: #024fb3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.popup-form button:hover {
+    background: #388e3c;
+}
+
+.popup-form button.close {
+    background: #f44336;
+}
+
+.popup-form button.close:hover {
+    background: #d32f2f;
+}
+
+
+

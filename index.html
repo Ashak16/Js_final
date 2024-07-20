@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-clipboard-list-check"></i> DCKAP Palli Inventory</div>
+    </nav>
+    <div class="dashboard">
+        <div class="inventory-boxes">
+            <div class="inventory-box">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                <div class="box-title">BOOKS</div>
+                <div class="box-count">0</div>
+            </div>
+            <div class="inventory-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="box-title">Rhino Toys</div>
+                <div class="box-count">0</div>
+            </div>
+            <div class="inventory-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="box-title">Bags</div>
+                <div class="box-count">0</div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="btn add-product">Add Product</button>
+            <button class="btn update-inventory">Update Inventory</button>
+        </div>
+        <div class="highest-quantity-products">
+            <h2>Highest Quantity Products</h2>
+            <div id="highestQuantityProducts"></div>
+        </div>
+        <div class="inventory-status">
+            <h2>Inventory Status</h2>
+            <canvas id="myChart" style="width:90%;max-width:400px"></canvas>
+        </div>
+        <div class="product-table">
+            <h2>Recipient Details</h2>
+            <table id="recipientTable">
+                <thead>
+                    <tr>
+                        <th>Recipient Name</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>BOOKS</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Sam Wilson</td>
+                        <td>Bags</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="formContainer"></div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
